@@ -94,7 +94,7 @@
       },
       // Called on mousedown. If falsy value is returned, the dragging will not start.
       onMousedown: function ($item, _super, event) {
-        if (event.target.nodeName != 'INPUT' && event.target.nodeName != 'SELECT') {
+        if (event.target.nodeName != 'INPUT' && event.target.nodeName != 'SELECT' && event.target.nodeName != 'TEXTAREA') {
           event.preventDefault();
           return true;
         }
